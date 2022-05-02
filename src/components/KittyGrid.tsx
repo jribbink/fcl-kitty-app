@@ -102,7 +102,7 @@ const kitties: Kitty[] = [
 
 export default (props: KittyGridProps) => {
     return (
-        <div className="row">
+        <div className="row px-3">
             {kitties.map(kitty => (
                 <KittyItem kitty={kitty} key={kitty.id}></KittyItem>
             ))}
