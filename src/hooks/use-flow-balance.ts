@@ -22,8 +22,6 @@ export function useFlowBalance(address: any) {
   const {data, error} = swr(key(address), async () => {
     if (address == null) return `${ZERO} ${TICKER}`
 
-    console.log(address)
-
     await new Promise(r => setTimeout(r, 1))
     return fcl
       .query({
