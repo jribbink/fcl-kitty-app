@@ -8,7 +8,7 @@ type ConnectWalletButtonProps = {
 
 export default (props: ConnectWalletButtonProps) => {
     return (
-        <button onClick={fcl.logIn} className="btn btn-success m-1">
+        <button onClick={fcl.logIn} className="btn btn-success m-1 shadow">
             Connect Wallet
         </button>
     )
