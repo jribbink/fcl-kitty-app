@@ -22,8 +22,8 @@ export default ({kitty}: KittyItemProps) => {
 
 
     return (
-        <div className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 p-4 " onClick={kittyClick}>
-            <div className={"position-relative " + styles['kitty-card']} style={kittyCardStyles} >
+        <div className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 p-4 ">
+            <div className={"position-relative " + styles['kitty-card']} style={kittyCardStyles} onClick={kittyClick}>
                 <div className={"d-flex flex-column justify-content-center " + styles['kitty-card-overlay']}>
                     <div className='d-flex flex-row justify-content-center'>
                         <button className='btn btn-success' style={{fontSize: '1.5em'}}>Purchase</button>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Component, useEffect, useState } from "react";
 import KittyImage from "assets/kitty-eth.svg"
 import ConnectWalletButton from "./ConnectWalletButton";
-import UserInfo from "./UserInfo";
+import UserMenu from "./UserMenu";
 
 type HeaderProps = {}
 
@@ -21,7 +21,7 @@ export default (props: HeaderProps) => {
         <div className="d-flex flex-row p-3" style={headerStyles}>
             <Image src={KittyImage} height="58" width="58"></Image>
             <div className="ms-auto align-self-center">
-                { user.loggedIn ? <UserInfo user={user} /> : <ConnectWalletButton /> }
+                { user.loggedIn ? <UserMenu user={user} /> : <ConnectWalletButton /> }
             </div>
         </div>
     )
